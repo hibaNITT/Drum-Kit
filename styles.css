@@ -1,0 +1,111 @@
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+body {
+  text-align: center;
+  background: linear-gradient(135deg, #a36f61, #3e2723);
+  font-family: 'Arvo', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #f5f5dc;
+  text-shadow: 2px 2px #5d4037;
+  margin-top: 50px;
+  font-family: 'Cinzel', serif;
+}
+
+footer {
+  color: #f5f5dc;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  opacity: 0.8;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #5d4037;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #2b1a16;
+  text-shadow: 0 2px 0 #f5f5dc;
+  border-radius: 24px;
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  margin: 18px;
+  background: radial-gradient(circle at 35% 30%, #efe6e1 0%, #d7ccc8 45%, #c7b3a9 100%);
+  box-shadow: 0 10px 24px rgba(33, 20, 16, 0.65), inset 0 8px 18px rgba(255, 255, 255, 0.35);
+  transition: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.drum::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  box-shadow: 0 0 0 4px rgba(245, 245, 220, 0.45);
+  pointer-events: none;
+}
+
+.pressed {
+  box-shadow: inset 0 0 14px rgba(93, 64, 55, 0.55), 0 6px 16px rgba(33, 20, 16, 0.55);
+  opacity: 0.9;
+  transform: scale(0.96);
+}
+
+.drum:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.6), 0 0 0 10px rgba(141, 110, 99, 0.65), 0 12px 26px rgba(33, 20, 16, 0.75);
+}
+
+.drum span {
+  background: rgba(245, 245, 220, 0.9);
+  color: #3e2723;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  box-shadow: 0 2px 6px rgba(33, 20, 16, 0.35);
+}
+
+.game-over {
+  background-color: #8d6e63;
+  opacity: 0.9;
+}
+
+.red {
+  color: #8d6e63;
+}
+
+.w { background-image: url("images/crash.png"); background-size: contain; background-repeat: no-repeat; background-position: center; }
+.a { background-image: url("images/kick.png"); background-size: contain; background-repeat: no-repeat; background-position: center; }
+.s { background-image: url("images/snare.png"); background-size: contain; background-repeat: no-repeat; background-position: center; }
+.d { background-image: url("images/tom1.png"); background-size: contain; background-repeat: no-repeat; background-position: center; }
+.j { background-image: url("images/tom2.png"); background-size: contain; background-repeat: no-repeat; background-position: center; }
+.k { background-image: url("images/tom3.png"); background-size: contain; background-repeat: no-repeat; background-position: center; }
+.l { background-image: url("images/tom4.png"); background-size: contain; background-repeat: no-repeat; background-position: center; }
+
+.set {
+  margin: 8% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+p{
+  font-size: 2rem;
+  font-family :'Gill Sans';
+  color :#201412
+}
+.footerImage{
+  height : 100px;
+}
